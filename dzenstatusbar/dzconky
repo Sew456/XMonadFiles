@@ -1,0 +1,26 @@
+conky.config={
+	use_spacer='right',
+	short_units=true,
+	background=true,
+	out_to_console=true,
+	out_to_x=false,
+	update_interval=1,
+
+	color1 = "#ACA401",	-- Medium Yellow
+	color2 = "#5A5A00",	-- Dark Yellow
+	color3 = "#EEEE00",	-- Light Yellow
+	color4 = "#6D0101",	-- Dark Red
+	color5 = "#DB2900",	-- Light Red
+	color6 = "#204121",	-- Dark Green
+	color7 = "#191919",	-- Lighter Black
+
+};
+conky.text = [[
+#Date Settings
+^p(220)^fg(\#FF9800)^i(/home/sew/Documents/dzenstatusbar/xbm/clock.xbm)^p(10)^fg(\#D0E0E4)${time %H:%M}\
+^p(400)^fg(\#FF9800)^i(/home/sew/Documents/dzenstatusbar/xbm/music.xbm)^fg(\#B1D631)$if_mpd_playing ${mpd_smart 32}$endif^fg()\
+^p(20)^fg(\#FF9800)^i(/home/sew/Documents/dzenstatusbar/xbm/cpu.xbm)^fg()^p(20)${cpu (cpu0)}%\
+^p(20)^fg(\#FF9800)^i(/home/sew/Documents/dzenstatusbar/xbm/volume75.xbm)^fg()^p(20)${exec ~/Documents/dzenstatusbar/scripts/get_vol.sh}%\
+^p(20)^fg(\#FF9800)^i(/home/sew/Documents/dzenstatusbar/xbm/diskette.xbm)^fg()^p(20)${memperc}%\
+^p(20)^fg(\#FF9800)^i(/home/sew/Documents/dzenstatusbar/xbm/arch.xbm)^fg()^p(20)${exec ~/Documents/dzenstatusbar/scripts/dz_pacman.sh}
+]]

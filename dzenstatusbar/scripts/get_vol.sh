@@ -1,0 +1,3 @@
+#!/bin/bash
+vol=`pactl list sinks | grep '^[[:space:]]Volume:' | head -n $(( 2 )) | tail -n 1 | sed -e 's,.* \([0-9][0-9]*\)%.*,\1,'`
+echo $vol

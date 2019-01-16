@@ -1,0 +1,1 @@
+the color of the text and the bar are all controlled by dzen2 conky only acts as something that "pipes" the information into the dzen2 bar. It does not directly control how dzen2 outputs the information. As a result, all of the control has to be within the dzen2 output script
